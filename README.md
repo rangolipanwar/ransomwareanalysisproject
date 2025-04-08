@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ransomware Analysis Framework
 
 A comprehensive platform for analyzing ransomware samples, detecting encryption methods, and monitoring network communication patterns.
@@ -109,3 +110,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Cuckoo Sandbox team
 - Wireshark community
 - Pycryptodome developers 
+=======
+# ransomware-analysis-framework
+The Ransomware Analysis Framework is a full-stack web application designed to analyze and assess potentially malicious files, especially ransomware samples. Built with a React.js frontend and a Flask backend, this tool allows users to upload executable files and receive an in-depth threat report based on static and dynamic analysis techniques.
+>>>>>>> 5d9ec803507dd418297b83e2cae91e2767b75d7a
