@@ -1,0 +1,27 @@
+{
+    "timestamp": "2025-03-24T15:53:13.697974",
+    "file_info": {
+        "name": "10007ae9-008f-46c1-bf2f-d02c24d6ffc4.exe",
+        "size": 118848,
+        "type": "Mach-O universal binary with 2 architectures: [x86_64:\\012- Mach-O 64-bit x86_64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>] [\\012- arm64e (caps: 0x2):\\012- Mach-O 64-bit arm64e (caps: PAC00) executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>]",
+        "hash": "6beef02785bc2271b5fdba55f19df5756c9f6ea408ee481739741699a05580cf"
+    },
+    "yara_matches": [],
+    "suspicious_patterns": [],
+    "risk_level": "low",
+    "analysis_details": [],
+    "risk_score": 0.0,
+    "summary": {
+        "total_checks": 16,
+        "suspicious_findings": 0,
+        "risk_score": 0.0,
+        "is_system_binary": true
+    },
+    "report_path": "/Users/ayuishyadav/ransomwareanalysis/ransomware-analysis-framework/backend/analysis/../reports/analysis_report_20250324_155313.json",
+    "metadata": {
+        "original_filename": "python3.exe",
+        "uploaded_filename": "10007ae9-008f-46c1-bf2f-d02c24d6ffc4.exe",
+        "report_id": "3049e5f8-6943-4753-b9d0-370902db7618",
+        "timestamp": "2025-03-24T15:53:13.710746"
+    }
+}

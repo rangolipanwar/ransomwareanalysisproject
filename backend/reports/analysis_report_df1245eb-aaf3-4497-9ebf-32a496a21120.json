@@ -1,0 +1,51 @@
+{
+    "timestamp": "2025-03-24T15:08:11.754289",
+    "file_info": {
+        "name": "6ffcfbfd-552b-431d-b4bb-63ca8b76851f.exe",
+        "size": 2381232,
+        "type": "PE32+ executable for MS Windows 6.00 (GUI), x86-64, 7 sections",
+        "hash": "8158dc0569972c10056f507cf9e72f4946600ce163c4c659a610480585cd4935"
+    },
+    "yara_matches": [
+        {
+            "rule_name": "Ransomware_FileOperations",
+            "strings": [
+                "$file1",
+                "$file2",
+                "$file3"
+            ],
+            "tags": []
+        },
+        {
+            "rule_name": "Ransomware_Network",
+            "strings": [
+                "$network1",
+                "$network2",
+                "$network3",
+                "$network5"
+            ],
+            "tags": []
+        },
+        {
+            "rule_name": "Ransomware_SystemModification",
+            "strings": [
+                "$system1",
+                "$system2",
+                "$system4",
+                "$system5"
+            ],
+            "tags": []
+        }
+    ],
+    "suspicious_patterns": [
+        "Found ransom-related keyword: key"
+    ],
+    "risk_level": "high",
+    "report_path": "/Users/ayuishyadav/ransomwareanalysis/ransomware-analysis-framework/backend/analysis/../reports/analysis_report_20250324_150811.json",
+    "metadata": {
+        "original_filename": "procexp64.exe",
+        "uploaded_filename": "6ffcfbfd-552b-431d-b4bb-63ca8b76851f.exe",
+        "report_id": "df1245eb-aaf3-4497-9ebf-32a496a21120",
+        "timestamp": "2025-03-24T15:08:11.803770"
+    }
+}

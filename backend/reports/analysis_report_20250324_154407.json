@@ -1,0 +1,50 @@
+{
+    "timestamp": "2025-03-24T15:44:07.585489",
+    "file_info": {
+        "name": "7479bf9b-57c5-4733-8e94-bb179a4a0f4b.exe",
+        "size": 4531120,
+        "type": "PE32 executable for MS Windows 6.00 (GUI), Intel i386, 5 sections",
+        "hash": "106bf123359d03963b1df1011fb8560aaf1c5e811de775dce1d8a53758a69102"
+    },
+    "yara_matches": [
+        {
+            "rule_name": "Ransomware_FileOperations",
+            "strings": [
+                "$file1",
+                "$file2",
+                "$file3"
+            ],
+            "tags": []
+        },
+        {
+            "rule_name": "Ransomware_Network",
+            "strings": [
+                "$network1",
+                "$network2",
+                "$network3",
+                "$network5"
+            ],
+            "tags": []
+        },
+        {
+            "rule_name": "Ransomware_SystemModification",
+            "strings": [
+                "$system1",
+                "$system2",
+                "$system4",
+                "$system5"
+            ],
+            "tags": []
+        }
+    ],
+    "suspicious_patterns": [],
+    "risk_level": "low",
+    "analysis_details": [],
+    "risk_score": 31.58,
+    "summary": {
+        "total_checks": 19,
+        "suspicious_findings": 6,
+        "risk_score": 31.58,
+        "is_system_binary": false
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "timestamp": "2025-04-08T13:51:55.736328",
+    "file_info": {
+        "name": "9599125c-3dd8-474b-98c8-84e6625e3f2d.exe",
+        "size": 1075425,
+        "type": "PE32 executable for MS Windows 4.00 (GUI), Intel i386, Nullsoft Installer self-extracting archive, 5 sections",
+        "hash": "2fbd42863c21f28d10dfcee1f6356954eb26c976a70ebd475e40733def5a2d82"
+    },
+    "yara_matches": [
+        {
+            "rule_name": "Ransomware_FileOperations",
+            "strings": [
+                "$file1",
+                "$file2",
+                "$file3",
+                "$file4",
+                "$file5"
+            ],
+            "tags": []
+        },
+        {
+            "rule_name": "Ransomware_SystemModification",
+            "strings": [
+                "$system1",
+                "$system2",
+                "$system5"
+            ],
+            "tags": []
+        }
+    ],
+    "suspicious_patterns": [],
+    "risk_level": "low",
+    "analysis_details": [],
+    "risk_score": 22.22,
+    "summary": {
+        "total_checks": 18,
+        "suspicious_findings": 4,
+        "risk_score": 22.22,
+        "is_system_binary": false
+    },
+    "report_path": "/Users/ayuishyadav/ransomwareanalysis/ransomware-analysis-framework/backend/analysis/../reports/analysis_report_20250408_135155.json",
+    "metadata": {
+        "original_filename": "2fbd42863c21f28d10dfcee1f6356954eb26c976a70ebd475e40733def5a2d82.exe",
+        "uploaded_filename": "9599125c-3dd8-474b-98c8-84e6625e3f2d.exe",
+        "report_id": "2515a39a-7855-4c0c-8d71-77875725ed98",
+        "timestamp": "2025-04-08T13:51:55.756842"
+    }
+}

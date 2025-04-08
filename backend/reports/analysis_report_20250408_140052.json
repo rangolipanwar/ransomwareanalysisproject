@@ -1,0 +1,63 @@
+{
+    "timestamp": "2025-04-08T14:00:52.345942",
+    "file_info": {
+        "name": "b71f7b00-25c2-475e-b674-c54f40485528.exe",
+        "size": 15721026,
+        "type": "PE32+ executable for MS Windows 6.00 (GUI), x86-64, 7 sections",
+        "hash": "c0debf857c2e59dce4ef5bb8a7c916d5d9b44da76588ea6228b123a2707d9103"
+    },
+    "yara_matches": [
+        {
+            "rule_name": "Ransomware_Encryption",
+            "strings": [
+                "$encrypt3",
+                "$encrypt4",
+                "$ransom6"
+            ],
+            "tags": []
+        },
+        {
+            "rule_name": "Ransomware_FileOperations",
+            "strings": [
+                "$file1",
+                "$file2",
+                "$file3"
+            ],
+            "tags": []
+        },
+        {
+            "rule_name": "Ransomware_Network",
+            "strings": [
+                "$network1",
+                "$network2",
+                "$network3",
+                "$network5"
+            ],
+            "tags": []
+        }
+    ],
+    "suspicious_patterns": [
+        "Found encryption-related keyword: AES",
+        "Found encryption-related keyword: RSA"
+    ],
+    "risk_level": "medium",
+    "analysis_details": [
+        {
+            "type": "encryption_pattern",
+            "pattern": "AES",
+            "context": "dome.Cipher)\u0003r\u0002\u0000\u0000\u0000i4\u0001\u0000\u0000i@\u0003\u0000\u0000)\u0002\u0015Cryptodome.Cipher.AES)\u0003\u0000\u0000\u0000\u0000it\u0004\u0000\u0000i\u000b\u0000\u0000)\u0002\u0016Cryptodome.Cipher.ARC2)\u0003r\u0006\u0000\u0000\u0000"
+        },
+        {
+            "type": "encryption_pattern",
+            "pattern": "RSA",
+            "context": "\u04b6|a?\u0783|I\u00009!i7DKfEvw:zmTCI!ene\u0019RSAG\r=4?%JZ\u0431F\u057c\ubb93\u8d39F\u0007TR.V\u0017"
+        }
+    ],
+    "risk_score": 42.11,
+    "summary": {
+        "total_checks": 19,
+        "suspicious_findings": 8,
+        "risk_score": 42.11,
+        "is_system_binary": false
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "timestamp": "2025-03-24T15:38:14.338898",
+    "file_info": {
+        "name": "4c698cc9-7743-4416-8ce5-09c87673d9f3.exe",
+        "size": 552640,
+        "type": "Mach-O universal binary with 2 architectures: [x86_64:\\012- Mach-O 64-bit x86_64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>] [\\012- arm64e (caps: 0x2):\\012- Mach-O 64-bit arm64e (caps: PAC00) executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>]",
+        "hash": "db088e455fe89676d08bf865e4f83aa995663b445441edd33e8c871217852da4"
+    },
+    "yara_matches": [
+        {
+            "rule_name": "Ransomware_Network",
+            "strings": [
+                "$network1",
+                "$network2",
+                "$network3",
+                "$network4",
+                "$network5"
+            ],
+            "tags": []
+        }
+    ],
+    "suspicious_patterns": [
+        "Found ransom-related keyword: key"
+    ],
+    "risk_level": "high",
+    "report_path": "/Users/ayuishyadav/ransomwareanalysis/ransomware-analysis-framework/backend/analysis/../reports/analysis_report_20250324_153814.json",
+    "metadata": {
+        "original_filename": "curl.exe",
+        "uploaded_filename": "4c698cc9-7743-4416-8ce5-09c87673d9f3.exe",
+        "report_id": "40778f1c-0230-469c-b8b7-1f944246d1e8",
+        "timestamp": "2025-03-24T15:38:14.366625"
+    }
+}

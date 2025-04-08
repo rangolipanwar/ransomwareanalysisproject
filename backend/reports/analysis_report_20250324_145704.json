@@ -1,0 +1,45 @@
+{
+    "timestamp": "2025-03-24T14:57:03.875069",
+    "file_info": {
+        "name": "3c41b14b-13a6-4135-b84a-8a0d9d2bfbab.exe",
+        "size": 15721026,
+        "type": "PE32+ executable for MS Windows 6.00 (GUI), x86-64, 7 sections",
+        "hash": "c0debf857c2e59dce4ef5bb8a7c916d5d9b44da76588ea6228b123a2707d9103"
+    },
+    "yara_matches": [
+        {
+            "rule_name": "Ransomware_Encryption",
+            "strings": [
+                "$encrypt3",
+                "$encrypt4",
+                "$ransom6"
+            ],
+            "tags": []
+        },
+        {
+            "rule_name": "Ransomware_FileOperations",
+            "strings": [
+                "$file1",
+                "$file2",
+                "$file3"
+            ],
+            "tags": []
+        },
+        {
+            "rule_name": "Ransomware_Network",
+            "strings": [
+                "$network1",
+                "$network2",
+                "$network3",
+                "$network5"
+            ],
+            "tags": []
+        }
+    ],
+    "suspicious_patterns": [
+        "Found encryption-related keyword: AES",
+        "Found encryption-related keyword: RSA",
+        "Found ransom-related keyword: key"
+    ],
+    "risk_level": "high"
+}

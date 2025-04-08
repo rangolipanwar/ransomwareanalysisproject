@@ -1,0 +1,32 @@
+{
+    "timestamp": "2025-03-24T17:34:12.821891",
+    "file_info": {
+        "name": "7dccf302-47ce-4257-9b15-b67c946cb000.exe",
+        "size": 552640,
+        "type": "Mach-O universal binary with 2 architectures: [x86_64:\\012- Mach-O 64-bit x86_64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>] [\\012- arm64e (caps: 0x2):\\012- Mach-O 64-bit arm64e (caps: PAC00) executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>]",
+        "hash": "db088e455fe89676d08bf865e4f83aa995663b445441edd33e8c871217852da4"
+    },
+    "yara_matches": [
+        {
+            "rule_name": "Ransomware_Network",
+            "strings": [
+                "$network1",
+                "$network2",
+                "$network3",
+                "$network4",
+                "$network5"
+            ],
+            "tags": []
+        }
+    ],
+    "suspicious_patterns": [],
+    "risk_level": "low",
+    "analysis_details": [],
+    "risk_score": 11.76,
+    "summary": {
+        "total_checks": 17,
+        "suspicious_findings": 2,
+        "risk_score": 11.76,
+        "is_system_binary": true
+    }
+}

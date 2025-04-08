@@ -1,0 +1,52 @@
+{
+    "timestamp": "2025-03-24T14:58:05.483015",
+    "file_info": {
+        "name": "a22ecf87-e690-4cf5-9255-df17e788d41f.exe",
+        "size": 15721026,
+        "type": "PE32+ executable for MS Windows 6.00 (GUI), x86-64, 7 sections",
+        "hash": "c0debf857c2e59dce4ef5bb8a7c916d5d9b44da76588ea6228b123a2707d9103"
+    },
+    "yara_matches": [
+        {
+            "rule_name": "Ransomware_Encryption",
+            "strings": [
+                "$encrypt3",
+                "$encrypt4",
+                "$ransom6"
+            ],
+            "tags": []
+        },
+        {
+            "rule_name": "Ransomware_FileOperations",
+            "strings": [
+                "$file1",
+                "$file2",
+                "$file3"
+            ],
+            "tags": []
+        },
+        {
+            "rule_name": "Ransomware_Network",
+            "strings": [
+                "$network1",
+                "$network2",
+                "$network3",
+                "$network5"
+            ],
+            "tags": []
+        }
+    ],
+    "suspicious_patterns": [
+        "Found encryption-related keyword: AES",
+        "Found encryption-related keyword: RSA",
+        "Found ransom-related keyword: key"
+    ],
+    "risk_level": "high",
+    "report_path": "/Users/ayuishyadav/ransomwareanalysis/ransomware-analysis-framework/backend/analysis/../reports/analysis_report_20250324_145805.json",
+    "metadata": {
+        "original_filename": "c0debf857c2e59dce4ef5bb8a7c916d5d9b44da76588ea6228b123a2707d9103.exe",
+        "uploaded_filename": "a22ecf87-e690-4cf5-9255-df17e788d41f.exe",
+        "report_id": "6e0c78d2-9acb-46d7-ab04-d232abd94776",
+        "timestamp": "2025-03-24T14:58:05.661687"
+    }
+}
